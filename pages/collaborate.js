@@ -9,7 +9,7 @@ const TypeForm = dynamic(() => import("../components/Collaborate/Typeform"), {
 export default function Collaborate() {
   return (
     <Wrapper>
-      <Typeform />
+      <TypeForm />
     </Wrapper>
   );
 }
