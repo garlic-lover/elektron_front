@@ -27,7 +27,7 @@ export default function Machine({ machine, style, route }) {
   const [themeFilter, themeFilterChange] = useState("All themes");
 
   const router = useRouter();
-  const { data } = useQuery(TRICKS, { variables: { machine: route } });
+  const { loading, data } = useQuery(TRICKS, { variables: { machine: route } });
 
   return (
     <Wrapper style={style}>
@@ -38,6 +38,7 @@ export default function Machine({ machine, style, route }) {
         themeFilter={themeFilter}
         themeFilterChange={themeFilterChange}
       />
+      {loading && <div>Loading ...</div>}
       <List>
         {data?.tricks.map((tuto, index) => {
           const { theme, level } = tuto;

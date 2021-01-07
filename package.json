@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.1.4",
+    "@typeform/embed": "^0.31.1",
     "graphql": "^15.3.0",
     "leaflet": "^1.7.1",
     "next": "10.0.1",

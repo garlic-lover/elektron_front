@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
+import Typeform from "../components/Collaborate/Typeform";
+
 export default function Collaborate() {
   return (
     <Wrapper>
-      <h3>Want to join the adventure ? </h3>
-      <p>Send us a mail or contact us in facebook </p>
-      <h3>Who would we need with us ? </h3>
-      <p>
-        Designers/graphists, content writers, web developpers, music lovers...
-      </p>
+      <Typeform />
     </Wrapper>
   );
 }
@@ -19,6 +16,8 @@ const Wrapper = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 90%;
+  max-width: 600px;
   & h3 {
     margin-bottom: 24px;
   }
