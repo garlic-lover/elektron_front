@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-import Typeform from "../components/Collaborate/Typeform";
+import dynamic from "next/dynamic";
+
+const TypeForm = dynamic(() => import("../components/Collaborate/Typeform"), {
+  ssr: false,
+});
 
 export default function Collaborate() {
   return (
